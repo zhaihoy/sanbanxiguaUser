@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        app:topbar_title="出纸结果"
+        style="@style/TopBarStyle"/>
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:src="@drawable/zhijin_result"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerInside"
+        android:layout_width="300dp"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_payment"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_logo"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="本次支付: "
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="20sp"
+            android:text="1"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_below="@+id/ll_payment"
+        android:text="共出两包纸巾"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="如有疑问?联系客服"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/mshare_btn_blue_selector"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/btn_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="视动世纪(北京)科技有限公司"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

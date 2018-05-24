@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/single_choice_03" android:state_checked="true"/>
+    <item android:drawable="@drawable/mshare_single_unchecked_06"/>
+</selector>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="关于我们"/>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="160dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="客户端"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_version_name"
+            android:layout_marginTop="5dp"
+            android:text="v 1.0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:background="#fff"
+        android:layout_below="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_weixin"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawableLeft="@drawable/mshare_weixin"
+                android:drawablePadding="5dp"
+                android:textColor="#1a1a1a"
+                android:text="微信公众号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_wechat"
+                android:textColor="#9d9d9d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_phone_number"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawableLeft="@drawable/mshare_phone_number"
+                android:drawablePadding="5dp"
+                android:textColor="#1a1a1a"
+                android:text="联系电话"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_phoneNumber"
+                android:textColor="#9d9d9d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_email"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawableLeft="@drawable/mshare_email"
+                android:drawablePadding="5dp"
+                android:textColor="#1a1a1a"
+                android:text="电子邮箱"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:textColor="#9d9d9d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_official_website"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawableLeft="@drawable/mshare_official_website"
+                android:drawablePadding="5dp"
+                android:textColor="#1a1a1a"
+                android:text="官方网站"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_website"
+                android:textColor="#9d9d9d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:text="北京视动世纪科技有限公司"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

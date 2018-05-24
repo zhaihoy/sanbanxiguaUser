@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp48"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    android:background="@color/global_top_bar"
+    android:id="@+id/mshell_topbar"
+    >
+
+    <TextView
+        android:id="@+id/shell_titlebar_tv_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <com.hbbc.util.MyCircleImageView
+        android:id="@+id/mshell_userPic"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        apps:border_width="2dp"
+        apps:border_color="@color/white"
+        android:src="@drawable/mmain_unlisted_upic"
+        />
+
+</RelativeLayout>

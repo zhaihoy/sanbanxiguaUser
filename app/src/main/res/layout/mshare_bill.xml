@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="账单"/>
+
+
+    <!--账单的ListView-->
+    <ListView
+        android:id="@+id/lv_bill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <!--<TextView
+        android:id="@+id/tv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Forest"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_user">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hbbc.util.MyLinearLayout
+                android:id="@+id/ll_toggle_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="本月"
+                    android:textColor="@color/mshare_text_color_gray"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/iv_arrow_top"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/mshare_arrow_up_gray"/>
+
+            </com.hbbc.util.MyLinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_record_this_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_toggle_top"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+            </LinearLayout>
+
+            <com.hbbc.util.MyLinearLayout
+                android:id="@+id/ll_toggle_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_record_this_month"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="全部"
+                    android:textColor="@color/mshare_text_color_gray"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/iv_arrow_bottom"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/mshare_arrow_down_gray"/>
+            </com.hbbc.util.MyLinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_record_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_toggle_bottom"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+
+                <include layout="@layout/mshare_bill_item_layout"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+-->
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3ca4ed</color>
+    <color name="colorPrimaryDark">#3ca4ed</color>
+    <color name="colorAccent">#3ca4ed</color><!--控制edittext/progressbar/dialog/radiobutton的全局显示颜色-->
+    <color name="black">#ff000000</color>
+    <color name="gray_lite">#c5c5c5</color>
+
+    <color name="mshare_scan_option_background">#080808</color>
+    <color name="mshare_scan_input_edit_text_bg">#3ca4ed</color>
+    <color name="login_et_bg">#f2f2f2</color>
+
+    <color name="mshare_scan_code_rectangle_color">#3ca4ed</color>
+
+    <color name="btn_blue_pressed">#1681cc</color>
+    <color name="btn_yellow_pressed">#e49515</color>
+    <color name="sharer_main_add_items_pressed">#aaF2DE42</color>
+    <color name="sharer_main_add_items_normal">#FFFDF4B0</color>
+
+    <color name="sharer_main_check_items_pressed">#AA6AECC8</color>
+    <color name="sharer_main_check_items_normal">#FFCDFFF1</color>
+
+    <color name="sharer_main_check_orders_pressed">#aa8f9ee7</color>
+    <color name="sharer_main_check_orders_normal">#FFE1E6FF</color>
+
+    <color name="sharer_main_check_msg_pressed">#aaef9a9c</color>
+    <color name="sharer_main_check_msg_normal">#FFFFD5D6</color>
+
+    <color name="sharer_general_bg_color_pressed">#FF3B3939</color>
+
+
+
+    <color name="swipe_color_1">#B6DB49</color>
+    <color name="swipe_color_2">#99CC00</color>
+    <color name="swipe_color_3">#8ABD00</color>
+    <color name="swipe_color_4">#7CAF00</color>
+
+    <color name="basicUIColor">#f5f5f5</color>
+
+    <color name="mshare_topbar_selector">#66c5c5c5</color>
+    <color name="alittlegray">#88ffffff</color>
+    <color name="mshare_map_zoom_vector_fill_color">#706d6d</color>
+    <color name="blue_800">#0a78c6</color>
+
+    <color name="mshare_shape_order_payed_color">#ffff6600</color>
+    <color name="btn_yellow">#e6b566</color>
+    <color name="green_text">#14b903</color>
+
+    <color name="green_button_lighter">#26aa2c</color>
+    <color name="green_button_darker">#26aa2c</color>
+
+    <color name="blue_button_lighter">#3ca4ed</color>
+    <color name="blue_button_darker">#1b7ec4</color>
+
+</resources>

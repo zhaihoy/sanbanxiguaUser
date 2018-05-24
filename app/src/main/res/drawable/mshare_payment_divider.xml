@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+    <!--shape 画line时,需要drawable的高度必须大于stroke的宽度,否则显示不出来-->
+    <!--并且,4.0以上手机必须把硬件加速选项关闭掉,否则只能显示为实线!!!-->
+    <stroke android:color="#e7e6e6" android:dashWidth="4dp" android:dashGap="2dp" android:width="1px"/>
+</shape>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="我的消息"/>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <!--enabled=false状态下是高亮的,true状态下是暗色的-->
+        <com.hbbc.util.MyLinearLayoutWithoutSelector
+            android:id="@+id/ll_system"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_system_message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/mshare_system_message_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="系统通知"
+                android:textColor="@color/mshare_message_text_color_selector"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mshare_message_yellow_indicator"/>
+
+        </com.hbbc.util.MyLinearLayoutWithoutSelector>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/mshare_message_vertical_divider"/>
+
+        <!--TODO 需要把Textview中的2个图片切成同样大小,这样就可以少用几个对象来解决-->
+        <com.hbbc.util.MyLinearLayoutWithoutSelector
+            android:id="@+id/ll_business"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_business_message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/mshare_business_message_selector"
+                android:gravity="center"
+                android:text="业务通知"
+                android:textColor="@color/mshare_message_text_color_selector"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mshare_message_yellow_indicator"
+                android:visibility="invisible"/>
+        </com.hbbc.util.MyLinearLayoutWithoutSelector>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top"/>
+
+</RelativeLayout>

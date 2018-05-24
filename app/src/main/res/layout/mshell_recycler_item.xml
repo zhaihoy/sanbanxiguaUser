@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/rcv_item_mrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        >
+
+        <ImageView
+            android:id="@+id/rcv_mrl_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mshell_rcv_item_description" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</LinearLayout>

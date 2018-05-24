@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!--矢量图形的优点-->
+    <path android:fillColor="@color/mshare_map_zoom_vector_fill_color"
+          android:strokeWidth="1"
+          android:strokeColor="@android:color/transparent"
+          android:pathData="M30,47.5L70,47.5L70,52.5,L30,52.5Z"
+          />
+    <path android:fillColor="@color/mshare_map_zoom_vector_fill_color"
+          android:strokeWidth="1"
+          android:strokeColor="@android:color/transparent"
+          android:pathData="M47.5,30L52.5,30L52.5,70L47.5,70Z"
+        />
+
+</vector>

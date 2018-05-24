@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/mnews_include"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        app:topbar_left_img="@drawable/global_back"
+        app:topbar_left_img_height="@dimen/dp23"
+        app:topbar_left_img_width="@dimen/dp25"
+        app:topbar_marginleft_leftimg="@dimen/dp8"
+        app:topbar_right_visible="gone"
+        app:topbar_title_color="@color/white"
+        app:topbar_title_size="@dimen/sp11" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mnews_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mnews_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

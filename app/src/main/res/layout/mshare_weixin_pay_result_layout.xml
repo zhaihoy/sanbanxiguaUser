@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="40dp"
+                  android:layout_marginRight="40dp"
+                  android:background="@drawable/mshare_weixin_rectangle_shape"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="支付结果"
+            android:textColor="@color/mshare_text_color_gray"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="支付成功"
+            android:textColor="@color/sharer_text_color"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/edit_gray"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sharer_gray_selector"
+            android:text="确认"/>
+
+    </LinearLayout>
+</RelativeLayout>

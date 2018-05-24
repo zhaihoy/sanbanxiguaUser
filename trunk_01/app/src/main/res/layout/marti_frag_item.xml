@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/marti_frg_item"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@drawable/global_item_bgcolor"
+    >
+
+    <ImageView
+        android:id="@+id/marti_frgrec_img"
+        android:layout_width="67dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dp7"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/dp10"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_toLeftOf="@+id/marti_frgrec_img2"
+        android:layout_toRightOf="@+id/marti_frgrec_img">
+
+        <TextView
+            android:id="@+id/marti_frgrec_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/marti_frgrec_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marti_frgrec_title"
+            android:layout_marginTop="@dimen/dp7"
+            android:lines="1"
+            android:text="@string/app_name"
+            android:textSize="12.5sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/marti_frgrec_img2"
+        android:layout_width="@dimen/dp10"
+        android:layout_height="@dimen/dp15"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp18"
+        android:src="@drawable/global_fragm_item_to_img"
+        android:tint="@color/global_tv_un"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/edit_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/edit_bg"/>
+</RelativeLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/unlisted_include"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        app:topbar_left_img="@drawable/global_back"
+        app:topbar_left_img_height="@dimen/dp23"
+        app:topbar_left_img_width="@dimen/dp25"
+        app:topbar_marginleft_leftimg="@dimen/dp8"
+        app:topbar_right_visible="gone"
+        app:topbar_title_color="@color/white"
+        app:topbar_title_size="@dimen/sp11"
+    />
+
+    <RelativeLayout
+        android:id="@+id/unlisted_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unlisted_include"
+        android:background="@color/global_top_bar"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp5">
+
+        <com.hbbc.util.MyCircleImageView
+            android:id="@+id/unlisted_img"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp90"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/mmain_unlisted_upic"
+            android:descendantFocusability="blocksDescendants"/>
+
+        <TextView
+            android:id="@+id/mshell_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unlisted_img"
+            android:layout_marginBottom="@dimen/dp45"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:text="未登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"/>
+
+        <FrameLayout
+            android:id="@+id/mshell_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp100"
+            android:layout_below="@+id/mshell_username"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/mshell_msg_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/mshell_msg_two1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp53"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mshell_msg_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp25"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/mshell_msg_num1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_below="@+id/mshell_msg_title1"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/mshell_line1"
+                    android:layout_width="@dimen/dp1"
+                    android:layout_height="@dimen/dp48"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_toRightOf="@+id/mshell_msg_two1"
+                    android:background="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/mshell_msg_two2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp53"
+                    android:layout_toRightOf="@+id/mshell_line1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mshell_msg_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp25"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/mshell_msg_num2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_below="@+id/mshell_msg_title2"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/mshell_line2"
+                    android:layout_width="@dimen/dp1"
+                    android:layout_height="@dimen/dp48"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_toRightOf="@+id/mshell_msg_two2"
+                    android:background="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/mshell_msg_two3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp53"
+                    android:layout_toRightOf="@+id/mshell_line2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mshell_msg_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp25"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/mshell_msg_num3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_below="@+id/mshell_msg_title2"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mshell_tologin"
+        android:layout_below="@+id/unlisted_user">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <View
+                android:id="@+id/underline_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/edit_gray"/>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/mshell_unlisted_msg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_below="@+id/underline_1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mshell_msg_img"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:src="@drawable/mmain_inform_msg"/>
+
+                <TextView
+                    android:id="@+id/mshell_msg_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:gravity="center_vertical"
+                    android:text="@string/unlisted_msg"
+                    android:textSize="@dimen/sp15"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/underline_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/mshell_unlisted_msg"
+                android:background="@color/edit_gray"/>
+
+            <LinearLayout
+                android:id="@+id/mshell_update"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_below="@+id/mshell_unlisted_msg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mshell_update_img"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:src="@drawable/mmain_g_update"/>
+
+                <TextView
+                    android:id="@+id/mshell_update_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:gravity="center_vertical"
+                    android:text="@string/unlisted_update"
+                    android:textSize="@dimen/sp15"/>
+
+                <ImageView
+                    android:id="@+id/mshell_unlisted_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:src="@drawable/mmain_unlisted_new"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/underline_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/mshell_update"
+                android:background="@color/edit_gray"/>
+
+            <LinearLayout
+                android:id="@+id/unlisted_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/underline_2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/unlisted_suggest_img"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:src="@drawable/mmain_inform_sug"/>
+
+                <TextView
+                    android:id="@+id/unlisted_suggest_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:gravity="center_vertical"
+                    android:text="@string/unlisted_suggest"
+                    android:textSize="@dimen/sp15"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/unlisted_suggest"
+                android:background="@color/edit_gray"/>
+
+            <LinearLayout
+                android:id="@+id/mshell_aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_below="@+id/unlisted_suggest">
+
+                <ImageView
+                    android:id="@+id/mshell_aboutus_img"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/underline_2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:src="@drawable/mmain_aboutus"/>
+
+                <TextView
+                    android:id="@+id/mshell_aboutus_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:gravity="center_vertical"
+                    android:text="@string/unlisted_aboutus"
+                    android:textSize="@dimen/sp15"/>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/mshell_aboutus"
+                android:background="@color/edit_gray"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mshell_tologin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp60"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/mmain_login_ucbtn"
+        android:descendantFocusability="blocksDescendants"
+        android:text="@string/login"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

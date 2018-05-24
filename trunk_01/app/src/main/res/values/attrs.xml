@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyCircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh1">
+        <attr name="ptrAdapterViewBackground" format="reference|color"/>
+        <attr name="ptrHeaderBackground" format="reference|color"/>
+        <attr name="ptrHeaderTextColor" format="reference|color"/>
+        <attr name="ptrHeaderSubTextColor" format="reference|color"/>
+        <attr name="ptrMode">
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+            <flag name="both" value="0x3"/>
+        </attr>
+        <attr name="ptrShowIndicator" format="reference|boolean"/>
+        <attr name="ptrDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color"/>
+        <attr name="headerBackground" format="reference|color"/>
+        <attr name="headerTextColor" format="color"/>
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+            <flag name="both" value="0x3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyTopbar">
+        <attr name="topbar_left_img" format="reference"/>
+        <attr name="topbar_left_img_width" format="dimension"/>
+        <attr name="topbar_left_img_height" format="dimension"/>
+        <attr name="topbar_marginleft_leftimg" format="dimension"/>
+
+        <attr name="topbar_right_img" format="reference"/>
+        <attr name="topbar_right_img_width" format="dimension"/>
+        <attr name="topbar_right_img_height" format="dimension"/>
+        <attr name="topbar_marginright_rightimg" format="dimension"/>
+
+        <attr name="topbar_title" format="string"/>
+        <attr name="topbar_title_size" format="integer"/>
+        <attr name="topbar_title_color" format="integer"/>
+        <attr name="topbar_background" format="color|reference"/>
+        <attr name="topbar_left_visible">
+            <flag name="visible" value="0"/>
+            <flag name="invisible" value="4"/>
+            <flag name="gone" value="8"/>
+        </attr>
+
+        <attr name="topbar_right_visible">
+            <flag name="visible" value="0"/>
+            <flag name="invisible" value="4"/>
+            <flag name="gone" value="8"/>
+        </attr>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="HWEditText">
+        <attr name="cursorDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyPopupWindow">
+        <attr name="childResId" format="reference"/>
+    </declare-styleable>
+
+    <!--自定义标签项控件,用于动态添加&静态添加-->
+    <declare-styleable name="OptionItem">
+        <attr name="option_icon" format="reference"/>
+        <attr name="option_title" format="string"/>
+
+        <attr name="drawablePadding" format="integer"/>
+        <attr name="textSize" format="integer"/>
+
+        <attr name="content" format="string"/>
+        <attr name="radio_button_margin_left" format="integer"/>
+
+        <attr name="radio_button_dimension" format="integer"/>
+        <attr name="radio_button_status" format="boolean"/>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp40"
+    android:id="@+id/global_tops"
+    >
+    <ImageView
+        android:layout_marginLeft="@dimen/dp12"
+        android:id="@+id/login_back"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_width="@dimen/dp23"
+        android:layout_height="@dimen/dp25"
+        android:src="@drawable/global_back"
+        />
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textColor="@color/global_top_bar"
+        android:textSize="@dimen/dp20"
+        />
+</RelativeLayout>

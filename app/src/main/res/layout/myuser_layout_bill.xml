@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_right_visible="gone"
+        app:topbar_title="账单"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/bill_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="?android:attr/textAppearance"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/bill_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bill_tab_layout"/>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/aboutus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        app:topbar_left_img="@drawable/global_back"
+        app:topbar_left_img_height="@dimen/dp23"
+        app:topbar_left_img_width="@dimen/dp25"
+        app:topbar_marginleft_leftimg="@dimen/dp8"
+        app:topbar_right_visible="gone"
+        app:topbar_title_color="@color/white"
+        app:topbar_title_size="@dimen/sp11"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutus_layout"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical">
+
+        <com.hbbc.util.MyCircleImageView
+            android:id="@+id/aboutus_logo"
+            android:layout_width="@dimen/dp138"
+            android:layout_height="@dimen/dp138"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp25"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/aboutus_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:gravity="center"
+            android:textSize="@dimen/sp12"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/aboutus_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp92"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/about_technicalsupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:textColor="@color/edit_gray"
+    />
+</RelativeLayout>

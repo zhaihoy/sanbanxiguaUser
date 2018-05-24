@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+
+        app:topbar_left_img="@drawable/mshare_hamburger"
+        app:topbar_right_img="@drawable/mshare_search"
+
+        app:paddingEnd="20dp"
+
+        app:topbar_title="共享挖掘机"
+        app:topbar_title_size="16"/>
+
+    <com.hbbc.util.MyRelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.hbbc.mshare.user.MMapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.hbbc.mshare.user.MMapView>
+
+        <ImageButton
+            android:id="@+id/btn_position"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/mshare_position_selector"
+            android:foregroundGravity="center"
+            android:src="@drawable/mshare_position"
+            android:text="定位"/>
+
+        <TextView
+            android:id="@+id/tv_scanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/mshare_main_scan_textview_selector"
+            android:drawableLeft="@drawable/mshare_scan"
+            android:padding="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:text="扫码预约"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mshare_search_center"/>
+
+        <com.hbbc.util.MyPopupWindow
+            android:id="@+id/popup_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:childResId="@layout/mshare_popup_view"
+            android:visibility="gone"/>
+
+    </com.hbbc.util.MyRelativeLayout>
+</LinearLayout>

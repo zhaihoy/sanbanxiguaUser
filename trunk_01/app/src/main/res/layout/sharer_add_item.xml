@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <com.hbbc.util.MyTopbar
+            android:id="@+id/top_bar"
+            style="@style/TopBarStyle"
+            app:topbar_right_visible="gone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:topbar_left_img="@drawable/mshare_back_arrow"
+            app:topbar_title="新增物品"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/top_bar_selector"
+            android:text="删除物品"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/top_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f6f6f6"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sharer_intro_icon"
+                android:drawablePadding="10dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:text="物品介绍"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/et_intro"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/divider"
+                android:background="@android:color/white"
+                android:hint="请输入物品介绍..."
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:id="@+id/optionContainer_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <!--物品类型-->
+                <com.hbbc.mshare.sharer.OptionItem
+                    android:id="@+id/option_goods_type"
+                    style="@style/Sharer_OptionItem_Style"
+                    app:option_icon="@drawable/sharer_yellow_circle"
+                    app:option_title="物品类型"
+                    app:radio_button_dimension="18"
+                    app:radio_button_margin_left="10"
+                    app:textSize="14"/>
+
+                <!--扫码使用-->
+                <com.hbbc.mshare.sharer.OptionItem
+                    android:id="@+id/option_buisness_type"
+                    style="@style/Sharer_OptionItem_Style"
+                    app:content="扫码使用"
+                    app:option_icon="@drawable/sharer_pink_circle"
+                    app:option_title="业务模式"
+                    app:radio_button_dimension="18"
+                    app:radio_button_margin_left="10"
+                    app:textSize="14"/>
+
+                <!--使用价格-->
+                <com.hbbc.mshare.sharer.OptionItem
+                    android:id="@+id/option_charge"
+                    style="@style/Sharer_OptionItem_Style"
+                    app:option_icon="@drawable/sharer__cyan_circle"
+                    app:option_title="使用价格"
+                    app:radio_button_dimension="18"
+                    app:radio_button_margin_left="10"
+                    app:textSize="14"/>
+
+                <!--定金-->
+                <com.hbbc.mshare.sharer.OptionItem
+                    android:id="@+id/option_deposit"
+                    style="@style/Sharer_OptionItem_Style"
+                    android:visibility="gone"
+                    app:option_icon="@drawable/sharer_blue_circle"
+                    app:option_title="定金"
+                    app:radio_button_dimension="18"
+                    app:radio_button_margin_left="10"
+                    app:textSize="14"/>
+
+            </LinearLayout>
+            <!--</ScrollView>-->
+            <LinearLayout
+                android:id="@+id/optionContainer_down"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mshare_btn_blue_selector"
+        android:text="提交审核"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+
+</LinearLayout>

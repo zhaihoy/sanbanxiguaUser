@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hbbc.mshare.order.RefreshHeaderView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_refresh"
+            android:src="@drawable/twitter_pull_arrow"/>
+
+
+        <ImageView
+            android:id="@+id/iv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_refresh"
+            android:src="@drawable/mshare_refresh_success_icon"
+            android:visibility="invisible"/>
+        <!--style="?android:attr/progressBarStyleSmallInverse"-->
+        <!--style="@style/SwipeLoadLayout_ProgressBar_Style"-->
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_refresh"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+</com.hbbc.mshare.order.RefreshHeaderView>

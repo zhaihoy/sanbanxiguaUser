@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:topbar_title="物品位置"/>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/top_bar"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/top_bar_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@android:color/white"/>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"/>
+
+    <ImageButton
+        android:id="@+id/btn_position"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/mshare_position_selector"
+        android:foregroundGravity="center"
+        android:src="@drawable/mshare_position"
+        android:text="定位"/>
+
+    <LinearLayout
+        android:padding="1dp"
+        android:id="@+id/ll_zoom_button_comtainer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:background="@drawable/sharer_zoom_container_shape"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="40dp"
+        android:layout_height="90dp">
+
+        <ImageButton
+            android:id="@+id/ib_zoomin"
+            android:scaleType="centerInside"
+            android:src="@drawable/mshare_map_zoomin_vector"
+            android:background="@drawable/mshare_map_zoom_bg_selector"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#d9d0d0"
+            android:layout_height="1px"/>
+        <ImageButton
+            android:id="@+id/ib_zoomout"
+            android:src="@drawable/mshare_map_zoomout_vector"
+            android:background="@drawable/mshare_map_zoom_bg_selector"
+            android:scaleType="centerInside"
+            android:layout_margin="0px"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

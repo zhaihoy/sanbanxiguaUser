@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"/>
+
+        <com.hbbc.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--<include-->
+            <!--android:id="@+id/include1"-->
+            <!--layout="@layout/mshare_scan_title"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginTop="25dp"/>-->
+
+        <com.hbbc.util.MyTopbar
+            android:id="@+id/top_bar"
+            app:topbar_title="物品扫描"
+            style="@style/TopBarStyle"
+            app:topbar_background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="260dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/top_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/paperscaninput"/>
+
+        <include
+            layout="@layout/mshare_scan_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

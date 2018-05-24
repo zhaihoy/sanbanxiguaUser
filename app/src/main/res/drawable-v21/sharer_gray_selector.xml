@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+     android:color="@color/mshare_text_color_gray">
+    <!--<item android:id="@android:id/mask">-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<corners android:bottomLeftRadius="10dp"-->
+                     <!--android:bottomRightRadius="10dp"/>-->
+            <!--<solid android:color="@android:color/white"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <item>
+        <selector>
+            <item  android:state_pressed="true">
+                <shape android:shape="rectangle">
+                    <corners android:bottomLeftRadius="10dp"
+                             android:bottomRightRadius="10dp"/>
+                    <solid android:color="@color/sharer_shallow_text_color"/>
+
+                </shape>
+            </item>
+
+            <item  android:state_pressed="false">
+                <shape android:shape="rectangle">
+                    <corners android:bottomLeftRadius="10dp"
+                             android:bottomRightRadius="10dp"/>
+                    <solid android:color="@android:color/white"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

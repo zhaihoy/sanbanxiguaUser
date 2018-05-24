@@ -1,0 +1,54 @@
+<resources>
+    <color name="global_top_bar">#3CA4ED</color>
+
+    <color name="white">#ffff</color>
+
+    <color name="edit_gray">#e5e5e5</color>
+
+    <color name="edit_bg">#e9e9e9</color>
+
+    <color name="login_main">#F6F6F6</color>
+
+    <color name="block">#000</color>
+
+    <color name="register_text">#FF7272</color>
+
+    <!-- 选项卡选中后的颜色 -->
+    <color name="tab_select">#eaedf4</color>
+
+    <!-- 注销背景按钮颜色 -->
+    <color name="cancel">#E63C3C</color>
+
+    <!-- 新闻热点背景颜色-->
+    <color name="hotspot">#e03131</color>
+
+    <color name="register_tip">#bfbfbf</color>
+
+    <color name="global_tv_un">#7a7a7a</color>
+
+    <color name="global_select_btn">#0e6eb1</color>
+
+    <color name="mpush_msginfo_title">#51514f</color>
+
+    <color name="mpush_msginfo_content">#999998</color>
+
+    <!-- 新闻内容字体颜色 -->
+    <color name="mnews_content">#484848</color>
+
+    <!--二维码相关-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="mshare_text_color_gray">#2d2d2d</color>
+    //torch icon bg
+    <color name="mshare_torch_icon_bg_pressed">#beb8b8</color>
+    <color name="mshare_torch_icon_bg_normal">#efecec</color>
+
+    <color name="sharer_text_color">#646464</color>
+
+    <color name="mshare_map_pressed">#cac6c6</color>
+
+    <color name="sharer_shallow_text_color">#dcd7d7</color>
+
+</resources>

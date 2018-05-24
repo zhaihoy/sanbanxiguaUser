@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="充值"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="充值金额"
+                android:textColor="@color/mshare_text_color_gray"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_options"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/tv_firsts"
+                    style="@style/mshare_style_charge_four_button"
+                    android:text="充100元"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/tv_seconds"
+                    style="@style/mshare_style_charge_four_button"
+                    android:text="充50元"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_top"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_thirds"
+                    style="@style/mshare_style_charge_four_button"
+                    android:text="充20元"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/tv_forths"
+                    style="@style/mshare_style_charge_four_button"
+                    android:text="充10元"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_bottom"
+                android:layout_marginTop="20dp"
+                android:text="充值方式"
+                android:textColor="@color/mshare_text_color_gray"
+                android:textSize="18sp"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_method"
+                android:layout_marginTop="20dp"
+                android:background="#7d7d7d"/>
+
+            <com.hbbc.util.MyLinearLayout
+                android:id="@+id/ll_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/weixin_ic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="微信"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/rbs_weixins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mshare_single_choice_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:enabled="false"/>
+            </com.hbbc.util.MyLinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/ll_weixin"
+                android:background="#7d7d7d"/>
+
+            <com.hbbc.util.MyLinearLayout
+                android:id="@+id/ll_zfb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zfb_pic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="支付宝"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/rbs_zfbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mshare_single_choice_selector"
+                    android:button="@null"
+                    android:enabled="true"/>
+            </com.hbbc.util.MyLinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/ll_zfb"
+                android:background="#7d7d7d"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!-- <include
+         layout="@layout/mshare_charge_bottom_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"/>-->
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btns_submits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mshare_btn_blue_selector"
+            android:text="立即充值"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btns_submits"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击立即充值,即表示您已经同意."
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_charge_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="5dp"
+                android:text="《充值活动协议》"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--include -->
+</RelativeLayout>

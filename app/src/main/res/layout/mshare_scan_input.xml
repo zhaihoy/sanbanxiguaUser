@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+    <!--TODO Can this layout be modified? think about it !-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/title_container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:padding="@dimen/dp5">-->
+
+    <!--<include-->
+    <!--android:id="@+id/include1"-->
+    <!--layout="@layout/mshare_scan_title"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_height="wrap_content"/>-->
+    <!--</FrameLayout>-->
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="物品扫描"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/paperscaninput"/>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/scan_code_shape"
+        android:gravity="center"
+        android:hint="请输入编号"
+        android:inputType="number"
+        android:lines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:textCursorDrawable="@drawable/mshare_et_cursor_shape"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="输入编号,获取解锁码"
+        android:textColor="#2d2d2d"
+        android:textSize="18sp"
+        android:textStyle="normal"/>
+
+    <ImageButton
+        android:id="@+id/ib_torch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp40"
+        android:src="@drawable/mshare_torch_icon"
+        android:background="@drawable/mshare_torch_bg_selector"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ib_torch"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/mshare_btn_blue_selector"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="确认"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp18"/>
+
+</RelativeLayout>

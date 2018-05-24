@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="购纸"/>
+
+
+    <com.hbbc.util.MyLinearLayout
+        android:id="@+id/ll_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+           android:layout_marginTop="0dp"
+           android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/uzi_logo"/>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+             android:id="@+id/ll_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="免费领纸"
+                android:textColor="#a4ce5f"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/tvs_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="每天只能领一次"
+               />
+         <!--   <TextView
+                android:id="@+id/tvs_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvs_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:text="元"
+                android:textStyle="bold"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/l_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="立即购纸支付"
+                 android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+           <TextView
+                   android:id="@+id/tvs_amount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="0.5"
+                   android:textColor="@android:color/holo_red_light"
+                   android:textSize="25sp"
+                   android:textStyle="bold"/>
+               <TextView
+                   android:id="@+id/tvs_yuan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="13dp"
+                    android:textSize="18sp"
+                   android:text="元后可立即退纸"
+                   android:textStyle="bold"/>-->
+        </LinearLayout>
+
+    </com.hbbc.util.MyLinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+         android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_Free"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/uzi_forfree"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_pay_submit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/uzi_paperfree"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

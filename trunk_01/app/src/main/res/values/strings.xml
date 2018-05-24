@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">共享挖掘机</string>//Caution:此处的app_name不是应用的标题,只被应用页面中TopBar所引用!
+    <string name="app_name_user">共享挖掘机_用户端</string>
+    <string name="app_name_sharer">共享挖掘机_车主端</string>
+
+	<!-- WXPayEntryActivity -->
+	<string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <string name="app_contentDescription">demo</string>
+    <string name="mshell_rcv_item_description">模块图片</string>
+
+    <string name="image_contentDescription">各模块图片</string>
+
+    <string name="login_validate">获取验证码</string>
+
+    <string name="login_username">请输入手机号</string>
+    <string name="login_password">请输入验证码</string>
+
+    <string name="login">登    录</string>
+    <string name="login_register">立即申请</string>
+    <string name="login_number">详情致电133-7887-5566</string>
+    <string name="login_cancal">取消</string>
+    <string name="tip">提示</string>
+    <string name="cancel">注销</string>
+
+    <string name="register_username">姓名</string>
+    <string name="register_password">账号</string>
+    <string name="register_et_username">请输入您的姓名</string>
+    <string name="register_et_password">请输入您的手机号</string>
+    <string name="register_explain">您是否了解戒毒康复治疗?</string>
+    <string name="register">立即注册</string>
+
+    <string name="unlisted_update">检查更新</string>
+    <string name="unlisted_aboutus">关于我们</string>
+    <string name="unlisted_msg">我的消息</string>
+    <string name="unlisted_suggest">用户建议</string>
+
+    <string name="suggest_sgt">提交建议</string>
+    <string name="suggest_tip">请在此输入您的建议</string>
+
+    <string name="inform_guardian">监护人</string>
+    <string name="inform_contacts">联系方式</string>
+
+    <string name="modify_finish">完成</string>
+
+    <string name="modify_photograph">拍照</string>
+
+    <string name="modify_selectalbum">从相册选择照片</string>
+
+    <string name="information_exit">您确定要退出当前账号吗?</string>
+
+    <string name="push_msginfo">消息详情</string>
+
+
+    <string name="pull_to_refresh_footer_release_label">上拉加载</string>
+
+    <string name="pull_to_refresh_footer_pull_label">加载成功</string>
+
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载...</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+
+    <string name="pull_to_refresh_release_label">刷新成功</string>
+
+
+    <!-- 新闻模块 -->
+    <string name="mnews_hotspot">热点</string>
+	 <string name="about_term">        欢迎您使用本软件！\n\n
+         \0  \0  \0  \0  \0  \0  \0 \0使用前，请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款，并选择接受或不接受。\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0除非您已阅读并接受本协议所有条款，否则您无权下载、安装或使用本软件及相关服务。\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0如果您未满18周岁，请在法定监护人的陪同下阅读本协议及其他上述协议，并特别注意未成年人使用条款。\n\n
+        一、【协议的范围】\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0本协议是您下载、安装、使用、复制本软件所订立的协议。\n本服务内容是指向用户提供的跨平台的通讯工具、支持多人参与，发送语音、图片和文字等即时通讯服务。\n\n
+        二、【软件的获取】\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0如果您从未经授权的第三方获取本软件或与本软件名称相同的安装程序，我们无法保证该软件能够正常使用，并对因此给您造成的损失不予负责。\n\n
+        三、【更新】\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0本软件新版本发布后，旧版本的软件可能无法使用。我们不保证旧版本软件继续可用及相应的客户服务，请您随时核对并下载最新版本。\n\n
+	四、【个人信息保护】\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0您在注册帐号或使用本服务的过程中，需要提供一些必要的信息，例如：手机号码、地理位置信息。若您提供的信息不完整，则无法使用本服务或在使用过程中受到限制。\n
+		 \0  \0  \0  \0 \0  \0  \0  \0未经您的同意，我们不会向以外的任何公司、组织和个人披露您的个人信息，但法律法规另有规定的除外。\n\n
+	五、【信息内容规范】\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0本条所述信息内容是指用户使用本软件及服务过程中所制作、复制、发布、传播的任何内容。\n
+		 \0  \0  \0  \0 \0  \0  \0  \0您不得利用本软件及服务制作、复制、发布、传播如下干扰正常运营，以及侵犯其他用户或第三方合法权益的内容，包括但不限于：\n
+		 \0  \0  \0  \0 \0  \0  \0  \0发布、传送、传播、储存违反国家法律法规禁止的内容：\n\n
+		 \0 \0 （1）违反宪法确定的基本原则的；\n
+		 \0 \0 （2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；\n
+		 \0 \0 （3）损害国家荣誉和利益的；\n
+		 \0 \0 （4）煽动民族仇恨、民族歧视，破坏民族团结的；\n
+		 \0 \0 （5）破坏国家宗教政策，宣扬邪教和封建迷信的；\n
+		 \0 \0 （6）散布谣言，扰乱社会秩序，破坏社会稳定的；\n
+		 \0 \0 （7）散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪的；\n
+		 \0 \0 （8）侮辱或者诽谤他人，侵害他人合法权益的；\n
+		 \0 \0 （9）煽动非法集会、结社、游行、示威、聚众扰乱社会秩序；\n
+		 \0 \0 （10）以非法民间组织名义活动的；\n
+		 \0 \0 （11）含有法律、行政法规禁止的其他内容的。\n
+		 \0 \0 （12）发布、传送、传播、储存侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的内容；\n
+		 \0 \0 （13）涉及他人隐私、个人信息或资料的；\n
+		 \0 \0 （14）发表、传送、传播骚扰、广告信息及垃圾信息或含有任何性或性暗示的；\n\n
+	六、【对自己行为负责】\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0您充分了解并同意，您必须为自己帐号下的一切行为负责，包括您所发表的任何内容以及由此产生的任何后果。您应对本服务中的内容自行加以判断，并承担因使用内容而引起的所有风险，包括因对内容的正确性、完整性或实用性的依赖而产生的风险。我们无法且不会对因前述风险而导致的任何损失或损害承担责任。\n\n
+	七、【违约处理】\n\n
+		 \0  \0  \0  \0 \0  \0  \0  \0如果发现或收到他人举报或投诉用户违反本协议约定的，我们有权不经通知随时对相关内容进行删除、屏蔽，并视行为情节对违规帐号处以包括但不限于警告、限制或禁止使用部分或全部功能、帐号封禁直至注销的处罚，并公告处理结果。\n\n
+	</string>
+
+	    <string name="city_select">
+        {"dtCity":[{"CityName":"北京","ProvinceCode":"010","CityCode":"010"},
+		{"CityName":"广州","ProvinceCode":"020","CityCode":"020"},{"CityName":"上海","ProvinceCode":"021","CityCode":"021"},
+		{"CityName":"天津","ProvinceCode":"022","CityCode":"022"},{"CityName":"重庆","ProvinceCode":"023","CityCode":"023"},
+		{"CityName":"沈阳","ProvinceCode":"024","CityCode":"024"},{"CityName":"南京","ProvinceCode":"025","CityCode":"025"},
+		{"CityName":"武汉","ProvinceCode":"027","CityCode":"027"},{"CityName":"成都","ProvinceCode":"028","CityCode":"028"},
+		{"CityName":"西安","ProvinceCode":"029","CityCode":"029"},{"CityName":"邯郸","ProvinceCode":"0311","CityCode":"0310"},
+		{"CityName":"石家庄","ProvinceCode":"0311","CityCode":"0311"},{"CityName":"保定","ProvinceCode":"0311","CityCode":"0312"},
+		{"CityName":"张家口","ProvinceCode":"0311","CityCode":"0313"},{"CityName":"承德","ProvinceCode":"0311","CityCode":"0314"},
+		{"CityName":"唐山","ProvinceCode":"0311","CityCode":"0315"},{"CityName":"廊坊","ProvinceCode":"0311","CityCode":"0316"},
+		{"CityName":"沧州","ProvinceCode":"0311","CityCode":"0317"},{"CityName":"衡水","ProvinceCode":"0311","CityCode":"0318"},
+		{"CityName":"邢台","ProvinceCode":"0311","CityCode":"0319"},{"CityName":"秦皇岛","ProvinceCode":"0311","CityCode":"0335"},
+		{"CityName":"朔州","ProvinceCode":"0351","CityCode":"0349"},{"CityName":"忻州","ProvinceCode":"0351","CityCode":"0350"},
+		{"CityName":"太原","ProvinceCode":"0351","CityCode":"0351"},{"CityName":"大同","ProvinceCode":"0351","CityCode":"0352"},
+		{"CityName":"阳泉","ProvinceCode":"0351","CityCode":"0353"},{"CityName":"晋中","ProvinceCode":"0351","CityCode":"0354"},
+		{"CityName":"长治","ProvinceCode":"0351","CityCode":"0355"},{"CityName":"晋城","ProvinceCode":"0351","CityCode":"0356"},
+		{"CityName":"临汾","ProvinceCode":"0351","CityCode":"0357"},{"CityName":"吕梁","ProvinceCode":"0351","CityCode":"0358"},
+		{"CityName":"运城","ProvinceCode":"0351","CityCode":"0359"},{"CityName":"商丘","ProvinceCode":"0371","CityCode":"0370"},
+		{"CityName":"郑州","ProvinceCode":"0371","CityCode":"0371"},{"CityName":"安阳","ProvinceCode":"0371","CityCode":"0372"},
+		{"CityName":"新乡","ProvinceCode":"0371","CityCode":"0373"},{"CityName":"许昌","ProvinceCode":"0371","CityCode":"0374"},
+		{"CityName":"平顶山","ProvinceCode":"0371","CityCode":"0375"},{"CityName":"信阳","ProvinceCode":"0371","CityCode":"0376"},
+		{"CityName":"南阳","ProvinceCode":"0371","CityCode":"0377"},{"CityName":"开封","ProvinceCode":"0371","CityCode":"0378"},
+		{"CityName":"洛阳","ProvinceCode":"0371","CityCode":"0379"},{"CityName":"焦作","ProvinceCode":"0371","CityCode":"0391"},
+		{"CityName":"鹤壁","ProvinceCode":"0371","CityCode":"0392"},{"CityName":"濮阳","ProvinceCode":"0371","CityCode":"0393"},
+		{"CityName":"周口","ProvinceCode":"0371","CityCode":"0394"},{"CityName":"漯河","ProvinceCode":"0371","CityCode":"0395"},
+		{"CityName":"驻马店","ProvinceCode":"0371","CityCode":"0396"},{"CityName":"潢川","ProvinceCode":"0371","CityCode":"0397"},
+		{"CityName":"三门峡","ProvinceCode":"0371","CityCode":"0398"},{"CityName":"铁岭","ProvinceCode":"024","CityCode":"0410"},
+		{"CityName":"大连","ProvinceCode":"024","CityCode":"0411"},{"CityName":"鞍山","ProvinceCode":"024","CityCode":"0412"},
+		{"CityName":"抚顺","ProvinceCode":"024","CityCode":"0413"},{"CityName":"本溪","ProvinceCode":"024","CityCode":"0414"},
+		{"CityName":"丹东","ProvinceCode":"024","CityCode":"0415"},{"CityName":"锦州","ProvinceCode":"024","CityCode":"0416"},
+		{"CityName":"营口","ProvinceCode":"024","CityCode":"0417"},{"CityName":"阜新","ProvinceCode":"024","CityCode":"0418"},
+		{"CityName":"辽阳","ProvinceCode":"024","CityCode":"0419"},{"CityName":"朝阳","ProvinceCode":"024","CityCode":"0421"},
+		{"CityName":"盘锦","ProvinceCode":"024","CityCode":"0427"},{"CityName":"葫芦岛","ProvinceCode":"024","CityCode":"0429"},
+		{"CityName":"长春","ProvinceCode":"0431","CityCode":"0431"},{"CityName":"吉林","ProvinceCode":"0431","CityCode":"0432"},
+		{"CityName":"延吉延边","ProvinceCode":"0431","CityCode":"0433"},{"CityName":"四平","ProvinceCode":"0431","CityCode":"0434"},
+		{"CityName":"通化","ProvinceCode":"0431","CityCode":"0435"},{"CityName":"白城","ProvinceCode":"0431","CityCode":"0436"},
+		{"CityName":"辽源","ProvinceCode":"0431","CityCode":"0437"},{"CityName":"松原","ProvinceCode":"0431","CityCode":"0438"},
+		{"CityName":"白山","ProvinceCode":"0431","CityCode":"0439"},{"CityName":"珲春","ProvinceCode":"0431","CityCode":"0440"},
+		{"CityName":"双阳","ProvinceCode":"0431","CityCode":"0441"},{"CityName":"永吉","ProvinceCode":"0431","CityCode":"0442"},
+		{"CityName":"梅河口","ProvinceCode":"0431","CityCode":"0448"},{"CityName":"哈尔滨","ProvinceCode":"0451","CityCode":"0451"},
+		{"CityName":"齐齐哈尔","ProvinceCode":"0451","CityCode":"0452"},{"CityName":"牡丹江","ProvinceCode":"0451","CityCode":"0453"},
+		{"CityName":"佳木斯","ProvinceCode":"0451","CityCode":"0454"},{"CityName":"绥化","ProvinceCode":"0451","CityCode":"0455"},
+		{"CityName":"黑河","ProvinceCode":"0451","CityCode":"0456"},{"CityName":"大兴安岭","ProvinceCode":"0451","CityCode":"0457"},
+		{"CityName":"伊春","ProvinceCode":"0451","CityCode":"0458"},{"CityName":"大庆","ProvinceCode":"0451","CityCode":"0459"},
+		{"CityName":"七台河","ProvinceCode":"0451","CityCode":"0464"},{"CityName":"鸡西","ProvinceCode":"0451","CityCode":"0467"},
+		{"CityName":"鹤岗","ProvinceCode":"0451","CityCode":"0468"},{"CityName":"双鸭山","ProvinceCode":"0451","CityCode":"0469"},
+		{"CityName":"海拉尔呼伦贝尔","ProvinceCode":"0471","CityCode":"0470"},{"CityName":"呼和浩特","ProvinceCode":"0471","CityCode":"0471"},
+		{"CityName":"包头","ProvinceCode":"0471","CityCode":"0472"},{"CityName":"乌海","ProvinceCode":"0471","CityCode":"0473"},
+		{"CityName":"集宁乌兰察布","ProvinceCode":"0471","CityCode":"0474"},{"CityName":"通辽","ProvinceCode":"0471","CityCode":"0475"},
+		{"CityName":"赤峰","ProvinceCode":"0471","CityCode":"0476"},{"CityName":"鄂尔多斯","ProvinceCode":"0471","CityCode":"0477"},
+		{"CityName":"临河巴彦淖尔","ProvinceCode":"0471","CityCode":"0478"},{"CityName":"锡林浩特","ProvinceCode":"0471","CityCode":"0479"},
+		{"CityName":"乌兰浩特兴安盟","ProvinceCode":"0471","CityCode":"0482"},{"CityName":"阿拉善左旗","ProvinceCode":"0471","CityCode":"0483"},
+		{"CityName":"无锡","ProvinceCode":"025","CityCode":"0510"},{"CityName":"镇江","ProvinceCode":"025","CityCode":"0511"},
+		{"CityName":"苏州1","ProvinceCode":"025","CityCode":"0512"},{"CityName":"南通","ProvinceCode":"025","CityCode":"0513"},
+		{"CityName":"扬州","ProvinceCode":"025","CityCode":"0514"},{"CityName":"盐城","ProvinceCode":"025","CityCode":"0515"},
+		{"CityName":"徐州","ProvinceCode":"025","CityCode":"0516"},{"CityName":"淮阴淮安","ProvinceCode":"025","CityCode":"0517"},
+		{"CityName":"连云港","ProvinceCode":"025","CityCode":"0518"},{"CityName":"常州","ProvinceCode":"025","CityCode":"0519"},
+		{"CityName":"苏州2","ProvinceCode":"025","CityCode":"0520"},{"CityName":"泰州","ProvinceCode":"025","CityCode":"0523"},
+		{"CityName":"宿迁","ProvinceCode":"025","CityCode":"0527"},{"CityName":"菏泽","ProvinceCode":"0531","CityCode":"0530"},
+		{"CityName":"济南","ProvinceCode":"0531","CityCode":"0531"},{"CityName":"青岛","ProvinceCode":"0531","CityCode":"0532"},
+		{"CityName":"淄博","ProvinceCode":"0531","CityCode":"0533"},{"CityName":"德州","ProvinceCode":"0531","CityCode":"0534"},
+		{"CityName":"烟台","ProvinceCode":"0531","CityCode":"0535"},{"CityName":"潍坊","ProvinceCode":"0531","CityCode":"0536"},
+		{"CityName":"济宁","ProvinceCode":"0531","CityCode":"0537"},{"CityName":"泰安","ProvinceCode":"0531","CityCode":"0538"},
+		{"CityName":"临沂","ProvinceCode":"0531","CityCode":"0539"},{"CityName":"滨州","ProvinceCode":"0531","CityCode":"0543"},
+		{"CityName":"东营","ProvinceCode":"0531","CityCode":"0546"},{"CityName":"滁州","ProvinceCode":"0551","CityCode":"0550"},
+		{"CityName":"合肥","ProvinceCode":"0551","CityCode":"0551"},{"CityName":"蚌埠","ProvinceCode":"0551","CityCode":"0552"},
+		{"CityName":"芜湖","ProvinceCode":"0551","CityCode":"0553"},{"CityName":"淮南","ProvinceCode":"0551","CityCode":"0554"},
+		{"CityName":"马鞍山","ProvinceCode":"0551","CityCode":"0555"},{"CityName":"安庆","ProvinceCode":"0551","CityCode":"0556"},
+		{"CityName":"宿州","ProvinceCode":"0551","CityCode":"0557"},{"CityName":"阜阳","ProvinceCode":"0551","CityCode":"0558"},
+		{"CityName":"黄山","ProvinceCode":"0551","CityCode":"0559"},{"CityName":"淮北","ProvinceCode":"0551","CityCode":"0561"},
+		{"CityName":"铜陵","ProvinceCode":"0551","CityCode":"0562"},{"CityName":"宣城","ProvinceCode":"0551","CityCode":"0563"},
+		{"CityName":"六安","ProvinceCode":"0551","CityCode":"0564"},{"CityName":"巢湖","ProvinceCode":"0551","CityCode":"0565"},
+		{"CityName":"池州","ProvinceCode":"0551","CityCode":"0566"},{"CityName":"衢州","ProvinceCode":"0571","CityCode":"0570"},
+		{"CityName":"杭州","ProvinceCode":"0571","CityCode":"0571"},{"CityName":"湖州","ProvinceCode":"0571","CityCode":"0572"},
+		{"CityName":"嘉兴","ProvinceCode":"0571","CityCode":"0573"},{"CityName":"宁波","ProvinceCode":"0571","CityCode":"0574"},
+		{"CityName":"绍兴","ProvinceCode":"0571","CityCode":"0575"},{"CityName":"台州","ProvinceCode":"0571","CityCode":"0576"},
+		{"CityName":"温州","ProvinceCode":"0571","CityCode":"0577"},{"CityName":"丽水","ProvinceCode":"0571","CityCode":"0578"},
+		{"CityName":"金华","ProvinceCode":"0571","CityCode":"0579"},{"CityName":"舟山","ProvinceCode":"0571","CityCode":"0580"},
+		{"CityName":"福州","ProvinceCode":"0591","CityCode":"0591"},{"CityName":"厦门","ProvinceCode":"0591","CityCode":"0592"},
+		{"CityName":"宁德","ProvinceCode":"0591","CityCode":"0593"},{"CityName":"莆田","ProvinceCode":"0591","CityCode":"0594"},
+		{"CityName":"泉州","ProvinceCode":"0591","CityCode":"0595"},{"CityName":"漳州","ProvinceCode":"0591","CityCode":"0596"},
+		{"CityName":"龙岩","ProvinceCode":"0591","CityCode":"0597"},{"CityName":"三明","ProvinceCode":"0591","CityCode":"0598"},
+		{"CityName":"南平","ProvinceCode":"0591","CityCode":"0599"},{"CityName":"威海","ProvinceCode":"0531","CityCode":"0631"},
+		{"CityName":"枣庄","ProvinceCode":"0531","CityCode":"0632"},{"CityName":"日照","ProvinceCode":"0531","CityCode":"0633"},
+		{"CityName":"莱芜","ProvinceCode":"0531","CityCode":"0634"},{"CityName":"聊城","ProvinceCode":"0531","CityCode":"0635"},
+		{"CityName":"汕尾","ProvinceCode":"020","CityCode":"0660"},{"CityName":"潮阳","ProvinceCode":"020","CityCode":"0661"},
+		{"CityName":"阳江","ProvinceCode":"020","CityCode":"0662"},{"CityName":"揭阳","ProvinceCode":"020","CityCode":"0663"},
+		{"CityName":"茂名","ProvinceCode":"020","CityCode":"0668"},{"CityName":"西双版纳","ProvinceCode":"0871","CityCode":"0691"},
+		{"CityName":"德宏","ProvinceCode":"0871","CityCode":"0692"},{"CityName":"鹰潭","ProvinceCode":"0791","CityCode":"0701"},
+		{"CityName":"鄂州","ProvinceCode":"027","CityCode":"0711"},{"CityName":"孝感","ProvinceCode":"027","CityCode":"0712"},
+		{"CityName":"黄冈","ProvinceCode":"027","CityCode":"0713"},{"CityName":"黄石","ProvinceCode":"027","CityCode":"0714"},
+		{"CityName":"咸宁","ProvinceCode":"027","CityCode":"0715"},{"CityName":"荆州","ProvinceCode":"027","CityCode":"0716"},
+		{"CityName":"宜昌","ProvinceCode":"027","CityCode":"0717"},{"CityName":"恩施","ProvinceCode":"027","CityCode":"0718"},
+		{"CityName":"十堰","ProvinceCode":"027","CityCode":"0719"},{"CityName":"随州","ProvinceCode":"027","CityCode":"0722"},
+		{"CityName":"荆门","ProvinceCode":"027","CityCode":"0724"},{"CityName":"江汉仙桃","ProvinceCode":"027","CityCode":"0728"},
+		{"CityName":"岳阳","ProvinceCode":"0731","CityCode":"0730"},{"CityName":"长沙","ProvinceCode":"0731","CityCode":"0731"},
+		{"CityName":"湘潭","ProvinceCode":"0731","CityCode":"0732"},{"CityName":"株洲","ProvinceCode":"0731","CityCode":"0733"},
+		{"CityName":"衡阳","ProvinceCode":"0731","CityCode":"0734"},{"CityName":"郴州","ProvinceCode":"0731","CityCode":"0735"},
+		{"CityName":"常德","ProvinceCode":"0731","CityCode":"0736"},{"CityName":"益阳","ProvinceCode":"0731","CityCode":"0737"},
+		{"CityName":"娄底","ProvinceCode":"0731","CityCode":"0738"},{"CityName":"邵阳","ProvinceCode":"0731","CityCode":"0739"},
+		{"CityName":"湘西","ProvinceCode":"0731","CityCode":"0743"},{"CityName":"张家界","ProvinceCode":"0731","CityCode":"0744"},
+		{"CityName":"怀化","ProvinceCode":"0731","CityCode":"0745"},{"CityName":"永州","ProvinceCode":"0731","CityCode":"0746"},
+		{"CityName":"江门","ProvinceCode":"020","CityCode":"0750"},{"CityName":"韶关","ProvinceCode":"020","CityCode":"0751"},
+		{"CityName":"惠州","ProvinceCode":"020","CityCode":"0752"},{"CityName":"梅州","ProvinceCode":"020","CityCode":"0753"},
+		{"CityName":"汕头","ProvinceCode":"020","CityCode":"0754"},{"CityName":"深圳","ProvinceCode":"020","CityCode":"0755"},
+		{"CityName":"珠海","ProvinceCode":"020","CityCode":"0756"},{"CityName":"佛山","ProvinceCode":"020","CityCode":"0757"},
+		{"CityName":"肇庆","ProvinceCode":"020","CityCode":"0758"},{"CityName":"湛江","ProvinceCode":"020","CityCode":"0759"},
+		{"CityName":"中山","ProvinceCode":"020","CityCode":"0760"},{"CityName":"河源","ProvinceCode":"020","CityCode":"0762"},
+		{"CityName":"清远","ProvinceCode":"020","CityCode":"0763"},{"CityName":"顺德","ProvinceCode":"020","CityCode":"0765"},
+		{"CityName":"云浮","ProvinceCode":"020","CityCode":"0766"},{"CityName":"潮州","ProvinceCode":"020","CityCode":"0768"},
+		{"CityName":"东莞","ProvinceCode":"020","CityCode":"0769"},{"CityName":"防城港","ProvinceCode":"0771","CityCode":"0770"},
+		{"CityName":"南宁","ProvinceCode":"0771","CityCode":"0771"},{"CityName":"柳州","ProvinceCode":"0771","CityCode":"0772"},
+		{"CityName":"桂林","ProvinceCode":"0771","CityCode":"0773"},{"CityName":"梧州","ProvinceCode":"0771","CityCode":"0774"},
+		{"CityName":"玉林","ProvinceCode":"0771","CityCode":"0775"},{"CityName":"百色","ProvinceCode":"0771","CityCode":"0776"},
+		{"CityName":"钦州","ProvinceCode":"0771","CityCode":"0777"},{"CityName":"河池","ProvinceCode":"0771","CityCode":"0778"},
+		{"CityName":"北海","ProvinceCode":"0771","CityCode":"0779"},{"CityName":"新余","ProvinceCode":"0791","CityCode":"0790"},
+		{"CityName":"南昌","ProvinceCode":"0791","CityCode":"0791"},{"CityName":"九江","ProvinceCode":"0791","CityCode":"0792"},
+		{"CityName":"上饶","ProvinceCode":"0791","CityCode":"0793"},{"CityName":"抚州","ProvinceCode":"0791","CityCode":"0794"},
+		{"CityName":"宜春","ProvinceCode":"0791","CityCode":"0795"},{"CityName":"吉安","ProvinceCode":"0791","CityCode":"0796"},
+		{"CityName":"赣州","ProvinceCode":"0791","CityCode":"0797"},{"CityName":"景德镇","ProvinceCode":"0791","CityCode":"0798"},
+		{"CityName":"萍乡","ProvinceCode":"0791","CityCode":"0799"},{"CityName":"攀枝花","ProvinceCode":"028","CityCode":"0812"},
+		{"CityName":"自贡","ProvinceCode":"028","CityCode":"0813"},{"CityName":"绵阳","ProvinceCode":"028","CityCode":"0816"},
+		{"CityName":"南充","ProvinceCode":"028","CityCode":"0817"},{"CityName":"达州","ProvinceCode":"028","CityCode":"0818"},
+		{"CityName":"遂宁","ProvinceCode":"028","CityCode":"0825"},{"CityName":"广安","ProvinceCode":"028","CityCode":"0826"},
+		{"CityName":"巴中","ProvinceCode":"028","CityCode":"0827"},{"CityName":"泸州","ProvinceCode":"028","CityCode":"0830"},
+		{"CityName":"宜宾","ProvinceCode":"028","CityCode":"0831"},{"CityName":"内江资阳","ProvinceCode":"028","CityCode":"0832"},
+		{"CityName":"乐山","ProvinceCode":"028","CityCode":"0833"},{"CityName":"西昌","ProvinceCode":"028","CityCode":"0834"},
+		{"CityName":"雅安","ProvinceCode":"028","CityCode":"0835"},{"CityName":"康定","ProvinceCode":"028","CityCode":"0836"},
+		{"CityName":"阿坝","ProvinceCode":"028","CityCode":"0837"},{"CityName":"德阳","ProvinceCode":"028","CityCode":"0838"},
+		{"CityName":"广元","ProvinceCode":"028","CityCode":"0839"},{"CityName":"贵阳","ProvinceCode":"0851","CityCode":"0851"},
+		{"CityName":"遵义","ProvinceCode":"0851","CityCode":"0852"},{"CityName":"安顺","ProvinceCode":"0851","CityCode":"0853"},
+		{"CityName":"黔南","ProvinceCode":"0851","CityCode":"0854"},{"CityName":"黔东南","ProvinceCode":"0851","CityCode":"0855"},
+		{"CityName":"铜仁","ProvinceCode":"0851","CityCode":"0856"},{"CityName":"毕节","ProvinceCode":"0851","CityCode":"0857"},
+		{"CityName":"六盘水","ProvinceCode":"0851","CityCode":"0858"},{"CityName":"黔西南","ProvinceCode":"0851","CityCode":"0859"},
+		{"CityName":"昭通","ProvinceCode":"0871","CityCode":"0870"},{"CityName":"昆明","ProvinceCode":"0871","CityCode":"0871"},
+		{"CityName":"大理","ProvinceCode":"0871","CityCode":"0872"},{"CityName":"红河","ProvinceCode":"0871","CityCode":"0873"},
+		{"CityName":"曲靖","ProvinceCode":"0871","CityCode":"0874"},{"CityName":"保山","ProvinceCode":"0871","CityCode":"0875"},
+		{"CityName":"文山","ProvinceCode":"0871","CityCode":"0876"},{"CityName":"玉溪","ProvinceCode":"0871","CityCode":"0877"},
+		{"CityName":"楚雄","ProvinceCode":"0871","CityCode":"0878"},{"CityName":"思茅","ProvinceCode":"0871","CityCode":"0879"},
+		{"CityName":"东川","ProvinceCode":"0871","CityCode":"0881"},{"CityName":"临沧","ProvinceCode":"0871","CityCode":"0883"},
+		{"CityName":"怒江","ProvinceCode":"0871","CityCode":"0886"},{"CityName":"中甸","ProvinceCode":"0871","CityCode":"0887"},
+		{"CityName":"丽江","ProvinceCode":"0871","CityCode":"0888"},{"CityName":"儋州市","ProvinceCode":"0898","CityCode":"0890"},
+		{"CityName":"拉萨","ProvinceCode":"0891","CityCode":"0891"},{"CityName":"日喀则","ProvinceCode":"0891","CityCode":"0892"},
+		{"CityName":"山南","ProvinceCode":"0891","CityCode":"0893"},{"CityName":"林芝","ProvinceCode":"0891","CityCode":"0894"},
+		{"CityName":"昌都","ProvinceCode":"0891","CityCode":"0895"},{"CityName":"那曲","ProvinceCode":"0891","CityCode":"0896"},
+		{"CityName":"阿里","ProvinceCode":"0891","CityCode":"0897"},{"CityName":"海口","ProvinceCode":"0898","CityCode":"0898"},
+		{"CityName":"三亚","ProvinceCode":"0898","CityCode":"0899"},{"CityName":"塔城","ProvinceCode":"0991","CityCode":"0901"},
+		{"CityName":"哈密","ProvinceCode":"0991","CityCode":"0902"},{"CityName":"和田","ProvinceCode":"0991","CityCode":"0903"},
+		{"CityName":"阿勒泰","ProvinceCode":"0991","CityCode":"0906"},{"CityName":"阿图什","ProvinceCode":"0991","CityCode":"0908"},
+		{"CityName":"博州博尔塔拉","ProvinceCode":"0991","CityCode":"0909"},{"CityName":"咸阳","ProvinceCode":"029","CityCode":"0910"},
+		{"CityName":"延安","ProvinceCode":"029","CityCode":"0911"},{"CityName":"榆林","ProvinceCode":"029","CityCode":"0912"},
+		{"CityName":"渭南","ProvinceCode":"029","CityCode":"0913"},{"CityName":"商洛","ProvinceCode":"029","CityCode":"0914"},
+		{"CityName":"安康","ProvinceCode":"029","CityCode":"0915"},{"CityName":"汉中","ProvinceCode":"029","CityCode":"0916"},
+		{"CityName":"宝鸡","ProvinceCode":"029","CityCode":"0917"},{"CityName":"铜川","ProvinceCode":"029","CityCode":"0919"},
+		{"CityName":"临夏","ProvinceCode":"0931","CityCode":"0930"},{"CityName":"兰州","ProvinceCode":"0931","CityCode":"0931"},
+		{"CityName":"定西","ProvinceCode":"0931","CityCode":"0932"},{"CityName":"平凉","ProvinceCode":"0931","CityCode":"0933"},
+		{"CityName":"庆阳","ProvinceCode":"0931","CityCode":"0934"},{"CityName":"金昌武威","ProvinceCode":"0931","CityCode":"0935"},
+		{"CityName":"张掖","ProvinceCode":"0931","CityCode":"0936"},{"CityName":"酒泉嘉峪关","ProvinceCode":"0931","CityCode":"0937"},
+		{"CityName":"天水","ProvinceCode":"0931","CityCode":"0938"},{"CityName":"陇南","ProvinceCode":"0931","CityCode":"0939"},
+		{"CityName":"甘南","ProvinceCode":"0931","CityCode":"0941"},{"CityName":"白银","ProvinceCode":"0931","CityCode":"0943"},
+		{"CityName":"银川","ProvinceCode":"0951","CityCode":"0951"},{"CityName":"石嘴山","ProvinceCode":"0951","CityCode":"0952"},
+		{"CityName":"吴忠","ProvinceCode":"0951","CityCode":"0953"},{"CityName":"固原","ProvinceCode":"0951","CityCode":"0954"},
+		{"CityName":"中卫","ProvinceCode":"0951","CityCode":"0955"},{"CityName":"海北","ProvinceCode":"0971","CityCode":"0970"},
+		{"CityName":"西宁","ProvinceCode":"0971","CityCode":"0971"},{"CityName":"海东","ProvinceCode":"0971","CityCode":"0972"},
+		{"CityName":"黄南","ProvinceCode":"0971","CityCode":"0973"},{"CityName":"海南","ProvinceCode":"0971","CityCode":"0974"},
+		{"CityName":"果洛","ProvinceCode":"0971","CityCode":"0975"},{"CityName":"玉树","ProvinceCode":"0971","CityCode":"0976"},
+		{"CityName":"海西","ProvinceCode":"0971","CityCode":"0977"},{"CityName":"海北藏族自治州","ProvinceCode":"0971","CityCode":"0978"},
+		{"CityName":"格尔木","ProvinceCode":"0971","CityCode":"0979"},{"CityName":"克拉玛依","ProvinceCode":"0991","CityCode":"0990"},
+		{"CityName":"乌鲁木齐","ProvinceCode":"0991","CityCode":"0991"},{"CityName":"奎屯","ProvinceCode":"0991","CityCode":"0992"},
+		{"CityName":"石河子","ProvinceCode":"0991","CityCode":"0993"},{"CityName":"昌吉","ProvinceCode":"0991","CityCode":"0994"},
+		{"CityName":"吐鲁番","ProvinceCode":"0991","CityCode":"0995"},{"CityName":"库尔勒巴音郭楞","ProvinceCode":"0991","CityCode":"0996"},
+		{"CityName":"阿克苏","ProvinceCode":"0991","CityCode":"0997"},{"CityName":"喀什","ProvinceCode":"0991","CityCode":"0998"},
+		{"CityName":"伊犁","ProvinceCode":"0991","CityCode":"0999"}],
+		"dtSheng":[{"ProvinceCode":"010","ProvinceName":"北京"},{"ProvinceCode":"020","ProvinceName":"广东"},
+		{"ProvinceCode":"021","ProvinceName":"上海"},{"ProvinceCode":"022","ProvinceName":"天津"},
+		{"ProvinceCode":"023","ProvinceName":"重庆"},{"ProvinceCode":"024","ProvinceName":"辽宁"},
+		{"ProvinceCode":"025","ProvinceName":"江苏"},{"ProvinceCode":"027","ProvinceName":"湖北"},
+		{"ProvinceCode":"028","ProvinceName":"四川"},{"ProvinceCode":"029","ProvinceName":"陕西"},
+		{"ProvinceCode":"0311","ProvinceName":"河北"},{"ProvinceCode":"0351","ProvinceName":"山西"},
+		{"ProvinceCode":"0371","ProvinceName":"河南"},{"ProvinceCode":"0431","ProvinceName":"吉林"},
+		{"ProvinceCode":"0451","ProvinceName":"黑龙江"},{"ProvinceCode":"0471","ProvinceName":"内蒙古"},
+		{"ProvinceCode":"0531","ProvinceName":"山东"},{"ProvinceCode":"0551","ProvinceName":"安徽"},
+		{"ProvinceCode":"0571","ProvinceName":"浙江"},{"ProvinceCode":"0591","ProvinceName":"福建"},
+		{"ProvinceCode":"0731","ProvinceName":"湖南"},{"ProvinceCode":"0771","ProvinceName":"广西"},
+		{"ProvinceCode":"0791","ProvinceName":"江西"},{"ProvinceCode":"0851","ProvinceName":"贵州"},
+		{"ProvinceCode":"0871","ProvinceName":"云南"},{"ProvinceCode":"0891","ProvinceName":"西藏"},
+		{"ProvinceCode":"0898","ProvinceName":"海南"},{"ProvinceCode":"0931","ProvinceName":"甘肃"},
+		{"ProvinceCode":"0951","ProvinceName":"宁夏"},{"ProvinceCode":"0971","ProvinceName":"青海"},
+		{"ProvinceCode":"0991","ProvinceName":"新疆"}]}
+    </string>
+
+	<!--二维码相关-->
+	<string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+	<string name="type_pay_weixin">1</string>
+	<string name="type_pay_zfb">2</string>
+	<string name="filter_weixin_receiver">com.hbbc.mshare.user.wx.pay.result</string>
+
+
+</resources>

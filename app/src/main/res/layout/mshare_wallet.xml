@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        app:topbar_title="我的钱包"
+        style="@style/TopBarStyle"/>
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <com.hbbc.util.MyCircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/mshare_default_user_icon"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+      <!--  <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mshare_arrow_right_white"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_user"
+        android:orientation="vertical">
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mshare_bill"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="账单"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mshare_arrow_right_gray"/>
+        </com.hbbc.util.MyLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/edit_gray"/>
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mshare_account"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="余额"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/edit_gray"/>
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mshare_charge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="充值"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mshare_arrow_right_gray"/>
+        </com.hbbc.util.MyLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/edit_gray"/>
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mshare_withdraw"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="提现"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mshare_arrow_right_gray"/>
+        </com.hbbc.util.MyLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/edit_gray"/>
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_request_deposit_send_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mshare_refund"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="退还押金"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <!--todo 这个尺寸要不要适配?-->
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mshare_arrow_right_gray"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/edit_gray"/>
+
+    </LinearLayout>
+</RelativeLayout>

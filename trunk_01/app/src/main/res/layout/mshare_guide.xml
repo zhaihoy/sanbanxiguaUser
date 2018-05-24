@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="用户指南"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="热点问题"/>
+
+        <com.hbbc.util.MyLinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:id="@+id/ll_deposit_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="押金说明"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mshare_arrow_right"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+
+        <com.hbbc.util.MyLinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:id="@+id/ll_deposit_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="充值协议"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mshare_arrow_right"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+        <com.hbbc.util.MyLinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:id="@+id/ll_location_failed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="定位失败"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mshare_arrow_right"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+        <com.hbbc.util.MyLinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:id="@+id/ll_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="找不到物品"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mshare_arrow_right"/>
+
+        </com.hbbc.util.MyLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#f5f5f5"/>
+
+
+        <com.hbbc.util.MyLinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:id="@+id/ll_all_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="全部问题"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mshare_arrow_right"/>
+
+        </com.hbbc.util.MyLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

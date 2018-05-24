@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="支付结果"/>
+
+
+    <com.hbbc.util.MyLinearLayout
+        android:id="@+id/ll_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/xigua_payment"/>
+
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/ll_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="本次支付了："
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvs_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvs_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:text="元"
+                android:textStyle="bold"/>
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:text="押金随心退,安全速到帐"
+                 android:textColor="#7d7d7d"
+                 android:textSize="16sp"
+                 android:textStyle="bold"/>-->
+        </LinearLayout>
+
+
+        <!--  <View
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+
+          <RadioButton
+              android:id="@+id/rb_weixin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:background="@drawable/mshare_single_choice_selector"
+              android:button="@null"
+              android:checked="true"
+              android:enabled="false"/>-->
+    </com.hbbc.util.MyLinearLayout>
+
+    <!--  <com.hbbc.util.MyLinearLayout
+          android:id="@+id/ll_zfb"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ll_weixin"
+          android:layout_marginTop="30dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:paddingBottom="10dp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp">
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/zfb_pic"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="支付宝"
+              android:textColor="@android:color/black"
+              android:textSize="14sp"/>
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+
+          <RadioButton
+              android:id="@+id/rb_zfb"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:background="@drawable/mshare_single_choice_selector"
+              android:button="@null"
+              android:enabled="true"/>
+
+
+      </com.hbbc.util.MyLinearLayout>
+      <com.hbbc.util.MyLinearLayout
+          android:id="@+id/ll_yue"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ll_zfb"
+          android:layout_marginTop="20dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:paddingBottom="10dp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:paddingTop="10dp">
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/weixin_ic"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="余额"
+              android:textColor="@android:color/black"
+              android:textSize="14sp"/>
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+
+          <RadioButton
+              android:id="@+id/yue"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:background="@drawable/mshare_single_choice_selector"
+              android:button="@null"
+              android:enabled="true"/>
+      </com.hbbc.util.MyLinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selecter_question"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+           />
+
+    </LinearLayout>
+
+</RelativeLayout>

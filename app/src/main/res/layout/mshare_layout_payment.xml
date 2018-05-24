@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="公寓预定"/>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您正在预定物品使用,本次预定需支付"/>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="400"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_first"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ll_title"
+        android:background="@color/mshare_text_color_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_first"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_with_background"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/blue_rect"
+            android:lines="3"
+            android:text="物品详情bbbAAAAAAAAAAAAAAAAAAAA"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_second"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ll_pic"
+        android:layout_marginBottom="10dp"
+        android:background="@color/mshare_text_color_gray"/>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_second"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/mshare_red_bell"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="提示:请于明天中午十二点之前退房"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/divider_third"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_tips"
+        android:background="@color/mshare_text_color_gray"/>
+
+    <TextView
+        android:id="@+id/tv_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_third"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/rmb_icon"
+        android:drawablePadding="5dp"
+        android:text="支付方式"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/pay_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_method"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_zfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zfb_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="支付宝"
+                android:textColor="@color/mshare_text_color_gray"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rb_zfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+        </com.hbbc.util.MyLinearLayout>
+
+        <com.hbbc.util.MyLinearLayout
+            android:id="@+id/ll_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wechat_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="微信"
+                android:textColor="@color/mshare_text_color_gray"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rb_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+        </com.hbbc.util.MyLinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mshare_btn_blue_selector"
+        android:text="确认支付"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

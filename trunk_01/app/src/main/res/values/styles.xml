@@ -1,0 +1,138 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyNotitleBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <!-- 进入退出动画 -->
+    <style name="MyAnimation" parent="Theme.AppCompat.Light">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/global_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/global_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/global_out</item>
+        <item name="android:activityOpenExitAnimation">@anim/global_out</item>
+    </style>
+
+    <!-- Button点击后  -->
+    <style name="LoginButtonThemeC" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/mmain_login_ucbtn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp20</item>
+    </style>
+
+    <!-- Button没有点击之前 -->
+    <style name="LoginButtonThemeUc" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/mmain_login_cbtn</item>
+        <item name="android:textColor">@color/global_top_bar</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp20</item>
+
+    </style>
+
+    <!--   注销-->
+    <style name="InformationButtonThemeCancel" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/mmain_login_cancelbtn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp20</item>
+    </style>
+
+    <style name="Login_AlertDialog">
+        <item name="android:background">@drawable/mmain_login_numdlg</item>
+    </style>
+
+    <style name="TopBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp48</item>
+        <item name="topbar_background">@color/colorPrimary</item>
+        <item name="topbar_left_img">@drawable/mshare_back_arrow</item>
+        <!--<item name="topbar_left_img_height">20dp</item>-->
+        <!--<item name="topbar_left_img_width">15dp</item>-->
+        <item name="topbar_left_img_height">48dp</item>
+        <item name="topbar_left_img_width">48dp</item>
+
+        <item name="topbar_right_img_height">48dp</item>
+        <item name="topbar_right_img_width">48dp</item>
+        <!--<item name="topbar_marginleft_leftimg">@dimen/dp15</item>-->
+        <!--<item name="topbar_marginright_rightimg">@dimen/dp15</item>-->
+        <item name="topbar_title_size">16</item>
+        <item name="topbar_title_color">@android:color/white</item>
+    </style>
+
+    <style name="TextView_Info_Style_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="TextView_Info_Style_Gray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="MShare_Popup_LL_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">@dimen/dp5</item>
+        <item name="android:layout_marginTop">@dimen/dp5</item>
+    </style>
+
+    <style name="Sharer_OptionItem_Style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginTop">1dp</item>
+
+        <item name="radio_button_dimension">18</item>
+        <item name="radio_button_margin_left">18</item>
+        <item name="drawablePadding">10</item>
+
+    </style>
+
+    <style name="InputDialog_EditTextStyle" parent="Widget.AppCompat.EditText">
+
+    </style>
+
+    <style name="curtomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:textSize">14sp</item>
+        <!--<item name="android:padding">0dp</item>-->
+        <!--<item name="android:dividerHeight">1dp</item>-->
+        <!--<item name="android:divider">#2b2b2b</item>-->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:listPreferredItemPaddingEnd">0dp</item>
+        <item name="android:listPreferredItemPaddingStart">0dp</item>
+        <item name="android:listPreferredItemPaddingLeft">0dp</item>
+        <item name="android:listPreferredItemPaddingRight">0dp</item>
+        <!--<item name="android:listDivider">@android:color/black</item>-->
+    </style>
+
+</resources>

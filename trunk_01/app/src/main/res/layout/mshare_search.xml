@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!--TODO 可以再加一层,设置整体背景-->
+    <LinearLayout
+        android:id="@+id/input_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <!--height=38dp是计算所得,不能改变-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp38"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_weight="1"
+            android:background="@drawable/mshare_search_bar_shape"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/mshare_search_icon_green"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/input_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/transparent"
+                android:hint="请输入关键字"
+                android:inputType="text|textAutoComplete"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="@drawable/top_bar_selector"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_bar"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的位置"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_weight="1"
+            android:lines="1"
+            android:textColor="#5c5c5c"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/ll_location"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"/>
+    <ListView
+        android:id="@+id/inputlist"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_location">
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.hbbc.util.MyTopbar
+        android:id="@+id/top_bar"
+        style="@style/TopBarStyle"
+        app:topbar_title="扫码开锁"/>
+
+    <com.hbbc.util.MyCircleImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/xigua_logo"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@+id/iv_logo"
+        android:text="正在开锁 请耐心等待"/>
+
+    <ProgressBar
+        android:indeterminate="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/UnLockProgressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_tip"/>
+
+
+</RelativeLayout>

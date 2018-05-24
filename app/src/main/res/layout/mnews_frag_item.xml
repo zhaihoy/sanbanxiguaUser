@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mnews_frg_item"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@drawable/global_item_bgcolor"
+    >
+
+    <ImageView
+        android:id="@+id/mnews_frgrec_img"
+        android:layout_width="67dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dp7"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/dp10"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_toLeftOf="@+id/mnews_frgrec_img2"
+        android:layout_toRightOf="@+id/mnews_frgrec_img">
+
+        <TextView
+            android:id="@+id/mnews_frgrec_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/mnews_frgrec_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mnews_frgrec_title"
+            android:layout_marginTop="@dimen/dp7"
+            android:lines="1"
+            android:text="@string/app_name"
+            android:textSize="12.5sp"/>
+
+        <TextView
+            android:id="@+id/mnews_frgrec_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mnews_frgrec_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toLeftOf="@+id/mnews_frgrec_hotspot"
+            android:lines="1"
+            android:text="@string/app_name"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/mnews_frgrec_hotspot"
+            android:layout_width="@dimen/dp28"
+            android:layout_height="@dimen/dp18"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mnews_frgrec_content"
+            android:layout_marginRight="@dimen/dp24"
+            android:background="@color/hotspot"
+            android:text="@string/mnews_hotspot"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp9"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mnews_frgrec_img2"
+        android:layout_width="@dimen/dp10"
+        android:layout_height="@dimen/dp15"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp18"
+        android:src="@drawable/global_fragm_item_to_img"
+        android:tint="@color/global_tv_un"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/edit_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/edit_bg"/>
+</RelativeLayout>

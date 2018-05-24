@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/global_top_bar" />
+    <size android:height="@dimen/dp1"
+        android:width="@dimen/dp1000"/>
+</shape>
